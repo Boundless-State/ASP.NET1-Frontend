@@ -10,6 +10,8 @@ import Projects from '../pages/Projects'
 import Members from '../pages/Members'
 import Clients from '../pages/Clients'
 
+//Här lånade jag av ditt projekt med lite ändringar
+
 const routesConfig = [
   {
     element: <CenterScreenLayout />,

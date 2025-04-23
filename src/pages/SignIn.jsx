@@ -22,6 +22,10 @@ const SignIn = () => {
       const { token, role } = res.data;
       const userRole = Array.isArray(role) ? role[0] : role;
 
+      //jwtDecode, hur Authskulle funka ihop.. var något jag kollade upp på nätet då jag inte fick det att fungera korrekt.
+      // samt frågade gpt om tips på hur jag skulle kunna lösa problemet med inloggning och token auth.
+      // efter många frågor back and forth så har jag alltså klippt och klistrat, samt jämfört
+      //  ihop med dina strukturer men skapade en egen som fungerade.
       const decoded = jwtDecode(token);
       const userId = decoded.sub;
       const clientId = decoded.client_id;

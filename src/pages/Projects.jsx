@@ -62,6 +62,7 @@ const Projects = () => {
         <ModalButton type="add" text="Add Project" onClick={() => setShowAddModal(true)} />
       </header>
 
+      {/* sorteringen här tog jag ifrån gpt för att se så det funkade med att hämta status ifrån databasen via backend */}
       <div className="tab-group">
         <button className={`tab ${activeTab === 'all' ? 'active' : ''}`} onClick={() => setActiveTab('all')}>All</button>
         <button className={`tab ${activeTab === 'completed' ? 'active' : ''}`} onClick={() => setActiveTab('completed')}>Completed</button>
